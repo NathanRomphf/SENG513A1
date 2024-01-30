@@ -1,0 +1,105 @@
+<!-- Can you improve this landing page for us, we want it to look amazing and be responsive -->
+<!-- My son Billy setup the page like this for us -->
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="30112397_styles.css" />
+    <!-- Add your stylesheet here -->
+    <title>Landing Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <!-- the background colour of the page should compliment the other colours being used -->
+  <body class="grid">
+    <header class="hero-section">
+      <!-- I can't get this to work -->
+      <div class="header">
+        <h1 id="welcome">Welcome to Application</h1>
+
+        <svg><use href="images/logo.svg#logo" /></svg>
+      </div>
+      <!-- This section should have a background image behind the Welcome to Application -->
+    </header>
+    <!-- I really wish we could have a flourish in the background of these feature-section -->
+    <!-- Each of these sections should have colours that compliment the colour of our background image and the foreground image -->
+    <div id="features-sec" class="features-section">
+      <article id="first-feat" class="feature">
+        <div class="vert-center">
+          <h2>Top 5 Reasons to Choose Us</h2>
+          <p>
+            Why would you want to choose us? Here are the top 5 reasons why we
+            are the best:
+          </p>
+          <ol>
+            <li>Quality Assurance</li>
+            <li>24/7 Customer Support</li>
+            <li>Affordable Pricing</li>
+            <li>Expert Team, Fast Delivery</li>
+          </ol>
+        </div>
+      </article>
+      <article class="feature">
+        <div class="vert-center">
+          <h2>Our Products include:</h2>
+          <ul>
+            <li>Advanced technology</li>
+            <li>100% Reliable</li>
+            <li>Cost-effective</li>
+            <li>User-friendly</li>
+          </ul>
+          <button class="shop-now">Shop Now!</button>
+        </div>
+      </article>
+    </div>
+    <section class="about-section">
+      <div class="about-title">
+        <h2>About Us</h2>
+      </div>
+      <div class="about-info">
+        <p>Information about the company.</p>
+        <p>
+          Click this link, it opens in a new window:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+            rel="external"
+            referrerpolicy="no-referrer"
+            class="link"
+            >MDN Docs</a
+          >
+        </p>
+      </div>
+      <!-- Insert the company image here, it's in the images directory called image-<size>.png -->
+      <div class="about-picture">
+        <picture>
+          <source
+            media="(max-width: 320px)"
+            srcset="./images/image-small.png"
+          />
+          <source
+            media="(max-width: 640px)"
+            srcset="./images/image-medium.png"
+          />
+          <source
+            media="(max-width: 1280px)"
+            srcset="./images/image-large.png"
+          />
+          <source
+            media="(min-width: 1281px)"
+            srcset="./images/image-extra-large.png"
+          />
+          <img
+            src="./images/image-small.png"
+            alt="Chris standing up holding his daughter Elva"
+          />
+        </picture>
+      </div>
+    </section>
+    <footer class="cta-section">
+      <h2>Contact Us</h2>
+      <p>Get in touch for more information.</p>
+      <button class="contact">Contact Us</button>
+    </footer>
+  </body>
+</html>
