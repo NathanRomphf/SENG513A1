@@ -9,6 +9,7 @@ body {
   height: auto;
   min-width: 280px;
   padding: 5vw, 10px, 5vw, 10px;
+  margin-bottom: 10px;
   text-justify: auto;
   text-align: center;
   background: #171c29 url("./images/flourish.png") no-repeat center center/cover
