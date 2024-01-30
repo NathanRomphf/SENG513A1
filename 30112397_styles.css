@@ -6,7 +6,7 @@ body {
 
 .features-section .feature {
   width: 40vw;
-  height: auto + 20px;
+  height: 40vh;
   min-width: 280px;
   margin: 10px 0px 10px 0px;
   text-justify: auto;
@@ -61,20 +61,6 @@ li {
 
 #hero-section {
   color: aliceblue;
-  background-image: -webkit-image-set(
-    url("./images/background-extra-small.jpg") 1x,
-    url("./images/background-small.jpg") 2x,
-    url("./images/background-medium.jpg") 3x,
-    url("./images/background-large.jpg") 4x,
-    url("./images/background-extra-large.jpg") 5x
-  );
-  background-image: image-set(
-    url("./images/background-extra-small.jpg") 1x,
-    url("./images/background-small.jpg") 2x,
-    url("./images/background-medium.jpg") 3x,
-    url("./images/background-large.jpg") 4x,
-    url("./images/background-extra-large.jpg") 5x
-  );
 }
 
 .link:visited {
@@ -110,7 +96,6 @@ header.hero-section {
 }
 
 .header {
-  background-color: #171c29;
   width: 90vw;
   height: max-content;
   margin: auto;
