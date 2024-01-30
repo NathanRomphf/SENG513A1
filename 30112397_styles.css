@@ -6,15 +6,13 @@ body {
 
 .features-section .feature {
   width: 40vw;
-  height: auto;
+  height: 60vw;
   min-width: 280px;
-  padding: 5vw, 10px, 5vw, 10px;
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 0px;
   text-justify: auto;
   text-align: center;
   background: #171c29 url("./images/flourish.png") no-repeat center center/cover
     fixed;
-  /* color: #a49a88; */
   border: none;
 }
 #features-sec {
@@ -24,7 +22,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 500px;
+  height: auto;
   background: #27385f url("./images/flourish.png") no-repeat center center/cover
     fixed;
   grid-area: main;
