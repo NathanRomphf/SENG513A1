@@ -1,0 +1,228 @@
+body {
+  color: rgb(174, 191, 207);
+  margin: 0%;
+  padding: 0%;
+}
+
+.features-section .feature {
+  width: 40vw;
+  height: auto;
+  min-width: 280px;
+  padding: 5vw, 10px, 5vw, 10px;
+  text-justify: auto;
+  text-align: center;
+  background: #171c29 url("./images/flourish.png") no-repeat center center/cover
+    fixed;
+  /* color: #a49a88; */
+  border: none;
+}
+#features-sec {
+  padding: 40px 0px 40px 0px;
+}
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  background: #27385f url("./images/flourish.png") no-repeat center center/cover
+    fixed;
+  grid-area: main;
+}
+
+.vert-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  text-align: left;
+  width: fit-content;
+  margin: auto;
+}
+
+li {
+  margin: 5px;
+  left: 0px;
+  right: 0px;
+}
+
+#hero-section {
+  color: aliceblue;
+  background-image: -webkit-image-set(
+    url("./images/background-extra-small.jpg") 1x,
+    url("./images/background-small.jpg") 2x,
+    url("./images/background-medium.jpg") 3x,
+    url("./images/background-large.jpg") 4x,
+    url("./images/background-extra-large.jpg") 5x
+  );
+  background-image: image-set(
+    url("./images/background-extra-small.jpg") 1x,
+    url("./images/background-small.jpg") 2x,
+    url("./images/background-medium.jpg") 3x,
+    url("./images/background-large.jpg") 4x,
+    url("./images/background-extra-large.jpg") 5x
+  );
+}
+
+.link:visited {
+  color: #274790;
+}
+
+.link:hover {
+  color: #a49a88;
+}
+
+.grid {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "head head"
+    "main main"
+    "about about"
+    "contact contact";
+}
+header.hero-section {
+  grid-area: head;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(174, 191, 207);
+}
+
+.logo {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+}
+
+.header {
+  background-color: #171c29;
+  width: 90vw;
+  height: max-content;
+  margin: auto;
+  padding-top: 10px;
+}
+
+section.about-section {
+  grid-area: about;
+  height: auto;
+  background-color: #171c29;
+  /* color: #a49a88; */
+  padding: 0px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 0%;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 35vw 55vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title pic"
+    "info pic";
+}
+
+.about-title {
+  grid-area: title;
+}
+
+.about-info {
+  grid-area: info;
+}
+
+.about-picture {
+  grid-area: pic;
+}
+
+footer.cta-section {
+  grid-area: contact;
+  background: #27385f;
+  color: rgb(174, 191, 207);
+}
+
+.company-img {
+  width: 50vw;
+  height: auto;
+  margin: auto;
+}
+
+button {
+  border: 0;
+  padding: 10px;
+  margin: 5%;
+  color: #647cb4;
+}
+
+button.shop-now {
+  background-color: #27385f;
+}
+
+button.contact {
+  background: #171c29;
+}
+
+button:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+  background: #647cb4;
+  color: aliceblue;
+}
+
+img {
+  width: 50vw;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  section.about-section {
+    grid-area: about;
+    height: auto;
+    background-color: #171c29;
+    padding: 0px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 0%;
+    display: block;
+  }
+}
+
+@media (min-width: 1921px) {
+  header.hero-section {
+    background-image: url("./images/background-extra-large.jpg");
+  }
+}
+@media (max-width: 1920px) {
+  header.hero-section {
+    background-image: url("./images/background-large.jpg");
+  }
+}
+
+@media (max-width: 1024px) {
+  header.hero-section {
+    background-image: url("./images/background-medium.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  header.hero-section {
+    background-image: url("./images/background-small.jpg");
+  }
+}
+
+@media (max-width: 640px) {
+  header.hero-section {
+    background-image: url("./images/background-extra-small.jpg");
+  }
+}
